@@ -1,0 +1,98 @@
+div h2 {
+	margin-top: 20px;
+}
+section {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+
+table {
+	border: 1px solid;
+	background: #ffffff;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table thead{
+	background: #034589;	
+}
+
+thead th{
+	color: #ffffff;
+	border: 1px solid #c1c1c1;
+}
+
+.thead-2 th{
+	background: #EEEEEE;
+	color: #000;
+}
+
+
+table tbody tr:nth-child(even) {
+	background-color: #EEEEEE;
+
+}
+
+table tbody tr:hover {
+	background-color: #cdcdcd;
+	
+}
+
+table th,
+table td {
+	padding: 1rem;
+	font-size: 1.2rem;
+	text-align: center;
+	border: 1px solid #c1c1c1;
+
+}
+
+table tr td:first-child {
+	font-weight: bold;
+
+}
+
+.table-container {
+	padding: 2rem 1rem;
+}
+
+.table-container h3 {
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.table-container tfoot {
+	background: #EEEEEE;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+}
+
+footer {
+	text-align: center;
+	padding: 30px;
+	background: #000;
+	color: #ffffff;
+}
+
+
+@media (max-width: 800px){
+	table th,
+	table td{
+		font-size: 14px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 500px){
+	table th,
+	table td{
+		font-size: 10px;
+		padding: 6px;
+	}
+}

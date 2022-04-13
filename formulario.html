@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/formulario.css">
+		
+	</head>
+	<body>
+
+		<header class="header">
+			<h2><a href="/">Rodrigo Paes</a></h2>
+			 <nav>
+		 <ul class="header-menu">
+			 <li><a href="index.html">Inicio</a></li>
+		 </ul>
+	 </nav>
+ </header>
+
+		<section>
+			<article class="formulario">
+
+				<h1>Simulação de Emprestimo</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="renda">Sua renda mensal</label>
+						<input type="text" name="renda" id="renda" min="1500" placeholder="R$ 1500">
+					</div>
+
+
+					<div class="idade">
+						<div class="idade-item">
+						<label for="idade">Idade</label>
+						<input type="number" name="idade" id="idade" min="18">
+						</div>
+
+						<div>
+						<p>
+							<label>Sexo</label>
+							<input type="radio" name="Masculino" value="masculino"> Masculino<br>
+							<input type="radio" name="feminino" value="feminino"> Feminino
+						</p>
+					</div>
+					</div>
+
+					<div>
+						<p>
+							<label>Estado Civil?</label>
+							<input type="checkbox" name="casado" value="casado"> Casado
+							<input type="checkbox" name="solteiro" value="solteiro"> Solteiro
+							
+						</p>
+					</div>
+
+					<div>
+						<label>Forma de pagamento</label>
+						<select>
+							<option value="carner">Carne</option>
+							<option value="saldodofgts">Saldo do FGTS</option>
+							<option value="cartao" selected>Cartão de credito</option>
+						</select>
+					</div>
+				
+
+					<div>
+						<label>Qual o valor do emprestimo?</label>
+						<output name="amount" id="amount" for="rangeInput">1000</output>
+						<input type="range" name="rangeInput" min="1000" id="rangeInput" max="2000" value="0" oninput="amount.value=rangeInput.value">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem" id="mensagem" rows="10" ></textarea>
+					</div>
+
+					<div>
+						<button type="submit">Enviar</button>
+					</div>
+					
+					
+
+				</form>
+
+				
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Rodrigo Paes</p>
+		</footer>
+		
+	</body>
+</html>
